@@ -7,6 +7,7 @@ import { obligationsRoutes } from './obligations/controller.js'
 import { prnRoutes } from './prns/prn/controller.js'
 import { prnConfirmAcceptRoutes } from './prns/prn/confirm-accept/controller.js'
 import { prnConfirmRejectRoutes } from './prns/prn/confirm-reject/controller.js'
+import { prnChooseYearRoutes } from './prns/prn/choose-year/controller.js'
 import { prnsListRoutes } from './prns/controller.js'
 import { prnsCheckSelectionRoutes } from './prns/check-selection/controller.js'
 
@@ -27,7 +28,8 @@ export const producer = {
           ...prnsCheckSelectionRoutes,
           ...prnRoutes,
           ...prnConfirmAcceptRoutes,
-          ...prnConfirmRejectRoutes
+          ...prnConfirmRejectRoutes,
+          ...prnChooseYearRoutes
         )
       }
 
